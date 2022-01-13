@@ -31,5 +31,9 @@
         "cache": false
       }
     }
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
   }
 }
