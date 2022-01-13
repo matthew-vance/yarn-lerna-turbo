@@ -1,0 +1,17 @@
+{
+  "name": "@matthew-vance/get-date",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matthew Vance",
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "devDependencies": {
+    "tsup": "^5.11.11",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  }
+}
