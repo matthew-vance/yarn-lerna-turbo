@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "name": "yarn-lerna-turbo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:matthew-vance/yarn-lerna-turbo.git",
+  "author": "Matthew Vance <mvance@efuse.io>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}
