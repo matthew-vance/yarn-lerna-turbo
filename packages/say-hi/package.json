@@ -1,7 +1,9 @@
 {
   "name": "@matthew-vance/say-hi",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "author": "Matthew Vance",
   "license": "MIT",
   "files": [
@@ -12,6 +14,7 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts"
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts"
   }
 }
