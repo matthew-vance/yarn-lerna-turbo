@@ -1,5 +1,14 @@
 # @matthew-vance/next-app
 
+## 0.0.4
+
+### Patch Changes
+
+- Updated dependencies [ddb5eeb]
+- Updated dependencies [3117d58]
+  - @matthew-vance/get-date@0.0.5
+  - @matthew-vance/say-hi@0.0.4
+
 ## 0.0.3
 
 ### Patch Changes
