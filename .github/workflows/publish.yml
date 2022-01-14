@@ -1,0 +1,23 @@
+name: Publish Package to Github
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  publish:
+    if: github.head_ref=='changeset-release/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16.x"
+          registry-url: "https://npm.pkg.github.com"
+          scope: "@matthew-vance"
+      - run: yarn
+      - run: yarn build
+      - run: yarn changeset publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
