@@ -2,6 +2,7 @@
   "name": "@matthew-vance/next-app",
   "private": true,
   "version": "0.0.4",
+  "repository": "https://github.com/matthew-vance/yarn-lerna-turbo",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
