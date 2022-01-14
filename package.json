@@ -10,14 +10,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
-    "@commitlint/config-conventional": "^16.0.0",
-    "commitizen": "^4.2.4",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^7.0.0",
     "lerna": "^4.0.0",
-    "lint-staged": "^12.1.7",
-    "prettier": "^2.5.1",
     "turbo": "^1.0.26"
   },
   "turbo": {
@@ -41,18 +34,6 @@
   },
   "scripts": {
     "build": "turbo run build",
-    "cm": "cz",
-    "dev": "turbo run dev",
-    "format": "prettier --write \"**/*.{js,ts,jsx,tsx,css,md,html,json}\"",
-    "prepare": "husky install",
-    "postinstall": "husky install"
-  },
-  "lint-staged": {
-    "*.{js,ts,jsx,tsx,css,md,html,json}": "prettier --write"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "dev": "turbo run dev"
   }
 }
