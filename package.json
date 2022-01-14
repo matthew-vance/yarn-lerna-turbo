@@ -11,6 +11,7 @@
     "libs/*"
   ],
   "devDependencies": {
+    "@changesets/cli": "^2.19.0",
     "lerna": "^4.0.0",
     "turbo": "^1.0.26"
   },
