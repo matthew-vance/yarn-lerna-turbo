@@ -22,6 +22,8 @@ jobs:
 
       - name: Install Dependencies
         run: yarn
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release Pull Request or Publish
         id: changesets
