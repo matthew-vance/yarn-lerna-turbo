@@ -1,5 +1,12 @@
 # @matthew-vance/next-app
 
+## 0.0.7
+
+### Patch Changes
+
+- Updated dependencies [6716a8e]
+  - @matthew-vance/say-hi@0.0.7
+
 ## 0.0.6
 
 ### Patch Changes
