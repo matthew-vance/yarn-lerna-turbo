@@ -1,5 +1,11 @@
 # @matthew-vance/say-hi
 
+## 0.0.6
+
+### Patch Changes
+
+- bd020bb: test bump version again
+
 ## 0.0.5
 
 ### Patch Changes
