@@ -17,7 +17,11 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           scope: "@matthew-vance"
       - run: yarn
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn changeset publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
