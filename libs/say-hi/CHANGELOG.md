@@ -1,5 +1,11 @@
 # @matthew-vance/say-hi
 
+## 0.0.5
+
+### Patch Changes
+
+- badc6a8: test version bump
+
 ## 0.0.4
 
 ### Patch Changes
