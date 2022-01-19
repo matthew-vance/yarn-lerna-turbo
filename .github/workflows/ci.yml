@@ -14,4 +14,8 @@ jobs:
         with:
           node-version: 16.x
       - run: yarn
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn turbo run build --since=origin/main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
